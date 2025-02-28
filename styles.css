@@ -1,21 +1,26 @@
-.slider-container{
+.slider-wrapper .slider-item{
     position: relative;
-    margin: auto;
-    max-width: 1000px;
+    width: 100%;
+    height: 100%;
 }
-.mySlides{
-    display: none;
+.slider-wrapper .slider-item:before{
+    position: relative;
+    content: none;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/pick6.jpg");
+    background-size: cover;
+    background-position: center;
 }
-.prev, .next{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 10px;
+.slider-wrapper .slider-item .slider-content{
     color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.5s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    width: 100%;
+    z-index: 20;
+    margin: 0 auto;
+    padding: 0 20px 10px;
+    max-width: 1400px;
+    position: relative;
+
 }
