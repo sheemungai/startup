@@ -1,7 +1,9 @@
 .slider-wrapper .slider-item{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 .slider-wrapper .slider-item:before{
     position: relative;
@@ -10,7 +12,7 @@
     right: 0;
     width: 100%;
     height: 100%;
-    background-image: url("images/pick6.jpg");
+    background-image: url("images/pick 6.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -22,5 +24,14 @@
     padding: 0 20px 10px;
     max-width: 1400px;
     position: relative;
-
+}
+.slider-item .slider-content .slide-subtitle{
+    font-size: 1.5rcm;
+    font-weight:700px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+.slider-item .slider-content .slide-description{
+    margin-top: 25px;
+    line-height: 25px;
 }
